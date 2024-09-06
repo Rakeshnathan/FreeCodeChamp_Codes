@@ -1,2 +1,3 @@
 # FreeCodeChamp_Codes
- All FCC projects
+ All FCC projects.
+Completed Responsive Web Design.
