@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+<link rel="stylesheet" href="java_css.css" />
+</head>
+<body>
+    <nav id="navbar">
+    <header><h1>Java Documentation<h1>
+        
+    </header>
+    <ul>
+        <li>
+            <a class="nav-link" href="#Java_Introduction">Java Introduction</a>
+        </li>
+        </ul>
+    <ul>
+        <li>
+            <a class="nav-link" href="#Installation">Installation</a>
+        </li>
+        </ul>
+            <ul>
+        <li>
+            <a class="nav-link" href="#Basic_Syntax">Basic Syntax</a>
+        </li>
+        </ul>
+            <ul>
+        <li>
+            <a class="nav-link" href="#Data_Types">Data Types</a>
+        </li>
+        </ul>
+            <ul>
+        <li>
+            <a class="nav-link" href="#Control_Statements">Control Statements</a>
+        </li>
+        </ul>
+        <ul>
+        <li>
+            <a class="nav-link" href="#Object_Oriented_Concepts">Object Oriented Concepts</a>
+        </li>
+        </ul>
+            <ul>
+        <li>
+            <a class="nav-link" href="#Exception_Handling">Exception Handling</a>
+        </li>
+        </ul>
+            <ul>
+        <li>
+            <a class="nav-link" href="#Variables">Variables</a>
+        </li>
+        </ul>
+            <ul>
+        <li>
+            <a class="nav-link" href="#Java_Math">Java Math</a>
+        </li>
+        </ul>
+            <ul>
+        <li>
+            <a class="nav-link" href="#Java_Arrays">Java Arrays</a>
+        </li>
+        </ul>
+            <ul>
+        <li>
+            <a class="nav-link" href="#Java_Strings">Java Strings</a>
+        </li>
+        </ul>
+            <ul>
+        <li>
+            <a class="nav-link" href="#Java_Interfaces">Java Interfaces</a>
+        </li>
+        </ul>
+            <ul>
+        <li>
+            <a class="nav-link" href="#Additional_Resources">Additional Resources</a>
+        </li>
+        </ul>
+  </nav>      
+
+    <main id="main-doc">
+
+        <section class="main-section" id="Java_Introduction">
+            <header>
+                Java Introduction
+            </header>
+            <article>
+                <p>Java is a versatile, high-level, object-oriented programming language that has been a fundamental part of the software development landscape since its inception. Created by Sun Microsystems and introduced in 1995, Java was designed to address the need for a language that could operate across different types of hardware and operating systems with ease.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Installation">
+            <header>
+                Installation
+            </header>
+            <article>
+                <p>To start programming in Java, you'll need to install the Java Development Kit (JDK).
+First, download the JDK from the official Oracle website or an alternative like OpenJDK, choosing the version appropriate for your operating system.Next, run the installer and follow the on-screen instructions. Make sure to include the Java Runtime Environment (JRE) if it's not bundled with the JDK.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Basic_Syntax">
+            <header>
+                Basic Syntax
+            </header>
+            <article>
+                <p>Java's syntax is designed to be clear and consistent. </p>
+                <ul>
+                    <li>Classes and Methods: Defined using class and void keywords, respectively.</li>
+<li>Statements: End with a semicolon (;).</li>
+ </ul>
+ <code>
+public class MyClass {
+    public void myMethod() {
+        System.out.println("Hello, World!");
+    }
+}
+    </code>  
+
+            </article>
+        </section>
+
+        <section class="main-section" id="Data_Types">
+            <header>
+                Data Types
+            </header>
+            <article>
+                <p>Java categorizes data types into primitive types and reference types:
+<ul>
+<li>Primitive Types: Includes int, char, double, etc.</li>
+<li>Reference Types: Includes objects and arrays.</li>
+</ul>
+</p>
+<code>
+    int number = 10;
+String text = "Hello";
+
+    </code>
+            </article>
+        </section>
+
+        <section class="main-section" id="Control_Statements">
+            <header>
+                Control Statements
+            </header>
+            <article>
+                <p>Control statements manage the flow of execution in a program. These include conditional statements like `if`, `else`, and `switch`, as well as loop constructs such as `for`, `while`, and `do-while`
+<ul>
+<li>Control statements manage the flow of execution in a program:</li>
+<li>Conditional Statements: if, else, switch.</li>
+<li>Loop Constructs: for, while, do-while.</li>
+</ul>
+</p>
+<code>
+    for (int i = 0; i < 5; i++) {
+    System.out.println(i);
+}
+</code>
+        </article>
+        </section>
+<section class="main-section" id="Object_Oriented_Concepts">
+            <header>
+            Object Oriented Concepts
+            </header>
+            <article>
+                <p>Java is built around object-oriented programming (OOP) principles, including classes, objects, inheritance, polymorphism, encapsulation, and abstraction.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Exception_Handling">
+            <header>
+                Exception Handling
+            </header>
+            <article>
+                <p>Java provides a structured way to handle runtime errors through exceptions. Key components include `try`, `catch`, `finally`, and `throw`</p>
+
+                <code>
+                    class Animal {
+    void makeSound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void makeSound() {
+        System.out.println("Dog barks");
+    }
+}
+
+</code>
+            </article>
+        </section>
+
+        <section class="main-section" id="Variables">
+            <header>
+                Variables
+            </header>
+            <article>
+                <p>Java supports various types of variables, including local, instance, and class variables. Each type has its own scope and lifetime.</p>
+                <ul>
+                <li>Java supports various types of variables:</li>
+                <li>Local Variables: Declared within a method or block.</li>
+<li>Instance Variables: Declared within a class but outside methods.</li>
+<li>Class Variables: Declared with the static keyword.</li>
+</ul>
+<code>
+    public class MyClass {
+    int instanceVar = 5; // Instance variable
+    static int classVar = 10; // Class variable
+
+    public void myMethod() {
+        int localVar = 15; // Local variable
+        System.out.println(localVar);
+    }
+}
+
+    </code>
+            </article>
+        </section>
+
+        <section class="main-section" id="Java_Math">
+            <header>
+                Java Math
+            </header>
+            <article>
+                <p>Java provides a comprehensive set of mathematical operations through the `Math` class. This includes basic operations like addition and multiplication, as well as advanced functions like trigonometry and logarithms.</p>
+                <ul>
+                Java provides a comprehensive set of mathematical operations through the Math class:
+<li>
+Basic Operations: Addition, subtraction, multiplication.</li>
+<li>Advanced Functions: Trigonometry, logarithms.</li>
+</ul>
+<code>
+    double result = Math.sqrt(16); // Square root of 16
+System.out.println(result);
+
+    </code>
+            </article>
+        </section>
+
+        <section class="main-section" id="Java_Arrays">
+            <header>
+                Java Arrays
+            </header>
+            <article>
+                <p>Arrays in Java are used to store multiple values of the same type. They are a fundamental data structure that allows for efficient data manipulation and access.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Java_Strings">
+            <header>
+                Java Strings
+            </header>
+            <article>
+                <p>The `String` class in Java provides methods for string manipulation, including concatenation, substring extraction, and pattern matching.</p>
+                
+                <ul>
+                    <li>The String class in Java provides methods for string manipulation:</li>
+
+<li>Concatenation: Combining two strings.
+Substring Extraction: Extracting a part of a string.</li>
+</ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Java_Interfaces">
+            <header>
+                Java Interfaces
+            </header>
+            <article>
+                <p>Interfaces in Java define methods that can be implemented by classes. They are used to achieve abstraction and multiple inheritance in Java.</p>
+                <ul>
+                <li>Interfaces in Java define methods that can be implemented by classes:</li>
+
+<li>Abstraction: Interfaces help in achieving abstraction.</li>
+<li>Multiple Inheritance: Allows a class to implement multiple interfaces.</li>
+</ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Additional_Resources">
+            <header>
+                Additional Resources
+            </header>
+            <article>
+                <p>For further learning about Java, consider exploring additional resources such as online tutorials, books, and community forums.</p>
+            </article>
+        </section>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+header {
+    position: fixed;
+    display: flex;
+    padding: 10px 20px;
+    width: 100%;
+    height: 80px;
+    background-color: #1C1C1C;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%; /* Ensure it fills the header */
+}
+
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+#navbar li {
+    margin: 0 15px; /* Space between navigation items */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+/* Navbar Effect */
+nav ul li a {
+    position: relative;
+    z-index: 1;
+}
+
+nav ul li a:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background: #4682B4;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+}
+
+nav ul li a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+
+/* Welcome Section */
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #300D1A;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+    margin-top: 80px; /* Adjust for the height of the fixed header */
+}
+
+.my_face img {
+    border-radius: 50%;
+    width: 420px; /* Adjust size as needed */
+    height: auto;
+    border: 2px solid tan;   
+}
+
+.written p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #5B8BB3;
+}
+
+.written h1 {
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: 400;
+    color: white;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+section h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: #79FBF5;
+    font-weight: 900;  
+}
+
+section p, section ul {
+    font-size: 18px;
+}
+
+#Skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#Skills li {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #87FE67;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+#Skills i {
+    font-size: 30px; /* Adjust the size of the icons */
+    margin-right: 20px; /* Space between icon and text */
+    color: #4682B4; 
+}
+
+.background-sections {
+    background-size: cover;
+    background-color: #24223F;
+    padding: 20px;
+}
+
+#Projects {
+    padding: 50px 20px;
+    color: #333;
+    color: white;
+}
+
+.projects-container {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center cards horizontally */
+}
+
+.project-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 700px; /* Adjust width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    height: 300px; /* Fixed height for images */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+.project-card h3 {
+    font-size: 24px;
+    margin: 15px;
+}
+
+.project-card p {
+    font-size: 16px;
+    margin: 0 15px 15px;
+}
+
+.project-card a {
+    display: block;
+    text-align: center;
+    background-color: #007bff;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0 0 8px 8px;
+}
+
+.project-card a:hover {
+    background-color: #87FE67;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#About, #Skills, #projects, #Contact {
+    padding-top: 100px; /* Adjust to match the header height */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 5px 0;
+    color: #87FE67;
+    font-size: 20px;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;   
+}
+
+form textarea {
+    margin-bottom: 10px;
+    padding: 20px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #1C1C1C;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+form button:hover {
+    background-color: #333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1C1C1C;
+    color: white;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #navbar ul {
+        flex-direction: column;
+        font-size: 10px;
+    }
+    #nav-link {
+        font-size: 10px;
+        padding: 0;
+        margin: 0;
+
+    }
+    #header{
+        height:100px;
+    }
+
+    .project-card {
+        width: 100%; /* Make project cards full width on small screens */
+    }
+    
+    #welcome-section {
+        padding: 30px 10px;
+    }
+    
+    .my_face img {
+        width: 100%;
+        max-width: 300px; /* Adjust image size for smaller screens */
+    }
+    
+    .written p {
+        font-size: 24px;
+    }
+    
+    .written h1 {
+        font-size: 18px;
+    }
+}

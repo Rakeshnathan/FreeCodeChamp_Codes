@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title class="project-title">My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./portfolio_css.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Code+Pro:wght@400;700&family=Fira+Code:wght@400;700&display=swap">
+</head>
+<body>
+  <header id="header">   
+    <nav id="navbar">
+      <ul>
+        <li><a class="nav-link" href="#About">About</a></li>
+        <li><a class="nav-link" href="#Skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="welcome-section">
+    <div class="my_face" id="About">
+      <img src="portfolio image.jpg" alt="R. Rakeshwaran">
+    </div>
+    <section class="written">
+      <article>
+        <p>Hello, I am R. Rakeshwaran</p>
+        <h1>an aspiring software developer</h1>
+      </article>
+    </section>
+  </div>
+
+  <div class="background-sections">
+    <section id="Skills">
+      <h2>Skills</h2>
+      <ul>
+        <li><i class="fa-brands fa-html5"></i> HTML</li>
+        <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
+        <li><i class="fa-brands fa-js"></i> JavaScript</li>
+        <li><i class="fa-brands fa-java"></i> Java</li>
+        <li><i class="fa-brands fa-node-js"></i> Node.js</li>
+        <li><i class="fa-solid fa-database"></i> SQL Database</li>
+        <li><i class="fa-brands fa-react"></i> React.js</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>(These projects were created while I was learning HTML CSS. More projects will be done after I complete learning Front-end development.)</p>
+      <div class="projects-container">
+        <div class="project-card project-tile">
+          <img src="project-image1.png" alt="Project 1">
+          <h3>Gamesphere Website</h3>
+          <p>A website where you can buy and order games</p>
+          <a id="profile-link" href="file:///D:/HTML%20CSS%20JS/HTML%20FILES/FreeCodeChamp_Codes/Gamesphere%20Website/website_html.html" target="_blank">View Project</a>
+        </div>
+        <div class="project-card project-tile">
+          <img src="project-image2.png" alt="Project 2">
+          <h3>Dribbble Website UI-Design Clone</h3>
+          <p>An interactive UI-design clone of Dribbble website created using basics of React.js along with HTML & CSS</p>
+          <a href="" target="_blank">View Project</a>
+        </div>
+        <div class="project-card project-tile">
+          <img src="project-image3.png" alt="Project 3">
+          <h3>A Survey Form</h3>
+          <p>A survey form created for a gaming platform where people interested in gaming can specify their favorite games, genres, and more.</p>
+          <a href="file:///D:/HTML%20CSS%20JS/HTML%20FILES/FreeCodeChamp_Codes/gaming%20survey%20form/Gaming_survey.HTML" target="_blank">View Project</a>
+        </div>
+        <div class="project-card project-tile">
+          <img src="project-image4.png" alt="Project 4">
+          <h3>A Tribute Page</h3>
+          <p>A tribute page highlighting Michael Jackson's career and work, making it a bio page.</p>
+          <a href="file:///D:/HTML%20CSS%20JS/HTML%20FILES/FreeCodeChamp_Codes/tribute%20page/tribute mj.html" target="_blank">View Project</a>
+        </div>
+        <div class="project-card project-tile">
+          <img src="project-image5.png" alt="Project 5">
+          <h3>A Simple Documentation Page</h3>
+          <p>Java documentation created for better understanding of navbar links.</p>
+          <a href="file:///D:/HTML%20CSS%20JS/HTML%20FILES/FreeCodeChamp_Codes/java%20documentation/java_html.HTML" target="_blank">View Project</a>
+        </div>
+        <div class="project-card project-tile">
+          <img src="project-image6.png" alt="Project 6">
+          <h3>CSS Drawing</h3>
+          <p>Penguin created using CSS with waving animation.</p>
+          <a href="file:///D:/HTML%20CSS%20JS/HTML%20FILES/FreeCodeChamp_Codes/penguin/penguin_html.HTML" target="_blank">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="Contact">
+      <h2>Contact Me</h2>
+      <form action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 R. Rakeshwaran</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,313 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#0D082B;
+}
+
+header{
+     position:fixed;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding:10px 20px;
+     width: 100%;
+     top: 0;
+     left: 0;
+     background-color: #7966DB;
+     z-index:1000;
+
+}
+#header-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#header-img:hover{
+    opacity: 0.6;
+}
+.logo-title{
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logo-title:hover{
+    color: #161F69;
+}
+#nav-bar{
+    display: flex;
+    align-items: center;
+}
+#nav-bar ul{
+    margin:0;
+    padding:0;
+    display: flex;
+    list-style: none;
+}
+#nav-bar li{
+    margin: 0 15px;/* Space between navigation items */
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px;
+    
+}
+.nav-link:hover{
+    color: white;
+}
+/*nav bar effect while hovering*/
+nav.shift ul li a {
+    position:relative;
+    z-index: 1;
+  }
+
+nav.shift ul li a:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background: #4682B4;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+  }
+  nav.shift ul li a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+  }
+.email-section {
+    margin-top: 70px; /* Add space below the header */
+    padding: 80px;
+}
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 600px; /* Adjust as needed */
+}
+
+#email {
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#submit {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #0056b3;
+}
+
+.game-photos {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* Create 12 equal-width columns */
+    grid-template-rows: repeat(2, 1fr); /* Create 2 equal-height rows */
+    gap: 0px; /* Space between images */
+}
+
+#header-img1 {
+    grid-column: span 6; /* Takes up half of the container width */
+    grid-row: span 1; /* Takes up 1 row */
+
+    height: auto;
+    object-fit: cover; /* Ensure image covers the container area */
+    border-radius: 2px; /* Optional: round corners */
+}
+
+#header-img2 {
+    grid-column: span 6; /* Takes up the remaining half of the container width */
+    grid-row: span 1; /* Takes up 1 row */
+    height: 57%;
+    object-fit: cover; /* Ensure image covers the container area */
+    border-radius: 2px; /* Optional: round corners */
+}
+/* Icons Section */
+.platform-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.platform-icons h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between icons */
+    margin-top:60px;
+}
+
+.icons i {
+    font-size: 48px; /* Size of the icons */
+    color: #333; /* Icon color */
+    transition: color 0.3s ease;
+}
+
+.icons i:hover {
+    color: #007bff; /* Color change on hover */
+}
+.first-paragraph h1{
+  font-size: 3rem;
+  color: orangered;
+  float: left;
+  margin-right: 1rem;
+}
+
+/* Image Styles */
+.game-photos {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:58px;
+}
+
+#header-img1, #header-img2, #header-img3 {
+    height: auto;
+}
+#header-img3{
+    width:fit-content;  
+}
+#header-img1, #header-img2{
+    width:fit-content;
+    gap:0px;
+    border-radius: 8px;
+    margin: 20px auto; /* Center and add space above and below */
+    max-width:1200px; /* Optional: Center and constrain width */
+    position: flex; 
+}
+
+.info-text {
+    text-align: center;
+    padding: 40px;
+    background-color: #161F69;
+    border-radius: 8px;
+    margin: 20px auto; /* Center and add space above and below */
+    max-width:1200px; /* Optional: Center and constrain width */
+    position: flex;
+}
+
+.info-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: orangered;;
+}
+
+.info-text p {
+    font-weight:bold;
+    font-size: 20px;
+    color: #98E7F1;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+.info-text p:first-letter{
+    font-weight:bold;
+    font-size: 1em;
+    color:orangered
+
+}
+.info-text:first-letter{
+    font-weight:bold;
+    font-size: 2em;
+    color:orangered;
+}
+
+@media (max-width: 768px) {
+    .info-text {
+        padding: 10px;
+    }
+
+    .info-text h2 {
+        font-size: 24px;
+    }
+
+    .info-text p {
+        font-size: 16px;
+    }
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin-top: 100px; /* Add margin to prevent content from hiding under the fixed header */
+}
+
+/* Video Section */
+#video-section {
+    padding: 20px;
+}
+
+#video {
+    width: 100%;
+    height: 80%; 
+}
+article p{
+    margin:0px;
+    gap:0px;
+    padding:0px;
+}
+
+.search {
+  /* Roundness */
+  border: 3px solid #BABABA;
+  border-radius: 20px;
+  height: 35px;
+  width: 350px;
+  padding: 20px;
+  
+  background: white;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  /* Fonts and text */
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #7A7A7A;
+  
+}
+
+.search:hover {
+  background: #FCFCFC;
+}
+
+footer{
+    margin-top:30px;
+    background-color:#7966DB;
+    padding:20px;   
+}
+footer span{
+    margin-top:5px;
+    display:flex;
+    justify-content:flex-end;
+    font-size:1rem;
+    color:white;
+}
+a{
+    text-decoration:none;
+}
